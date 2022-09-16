@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <!-- -------------------------------------------------------------
+         THIS IS BOOTSTRAP STYLE LNKS
+         -------------------------------------------------------------- -->
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- -------------------------------------------------------------
+         THIS IS PANGEA MIN AND LANDING BOOTSTRAP CSS LNKS
+         -------------------------------------------------------------- -->
+      <link rel="stylesheet" href="https://resources.pangeaglobalservices.com/whitepapers/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://resources.pangeaglobalservices.com/whitepapers/css/landing.css">
+      <!-- -------------------------------------------------------------
+         THIS JQUERY VALIDATION CDN
+         -------------------------------------------------------------- -->
+      <script src="https://jqueryvalidation.org/files/lib/jquery.js"></script>
+      <script src="https://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+      <title>5 Use Cases to Help Tax Professionals Take Back Their Time </title>
+      <!----------------------------------------------------------------->
+      <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+      <!----------------------------------------------------------------->
+      <script type="text/javascript" charset="utf-8">
+         $(document).ready(function () {
+            $.validator.addMethod('nofreeemail', function (value) {
+               return /^([\w-.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)(?!facebook\.com)(?!gmail\.com)(?!gmx\.com)(?!googlemail\.com)(?!hotmail\.com)(?!mac\.com)(?!me\.com)(?!mail\.com)(?!msn\.com)(?!yahoo\.com)(?!aol\.com)(?!google\.com)(?!live\.com)(?!att\.net)(?!comcast\.net)(?!sbcglobal\.net)(?!verizon\.net)([\w-]+.)+[\w-]{2,4})?$/.test(value);
+            }, 'Free email addresses are not allowed.');
+
+            // validate signup form on keyup and submit
+            $("#signup_form").validate({
+               errorElement: 'span',
+               rules: {
+                  firstname: {
+                     required: true,
+                  },
+                  lastname: {
+                     required: true,
+                  },
+                  company: {
+                     required: true,
+                  },
+                  job_function: {
+                     required: true,
+                  },
+                  email: {
+                     required: true,
+                     nofreeemail: true,
+                     email: true
+                  },
+                  work_phone: {
+                     required: true,
+                     number: true
+                  },
+                  city: {
+                     required: true,
+                  },
+                  state: {
+                     required: true,
+                  },
+                  zip: {
+                     required: true,
+                  },
+                  country: {
+                     required: true,
+                  },
+                  Industry: {
+                     required: true,
+                  },
+                  address_street1: {
+                     required: true,
+                  },
+                  std1: {
+                     required: true,
+                  },
+                  std2: {
+                     required: true,
+                  },
+                  std3: {
+                     required: true,
+                  },
+                  std4: {
+                     required: true,
+                  },
+                  std5: {
+                     required: true,
+                  },
+                  std6: {
+                     required: true,
+                  },
+                  camp_id: {
+                     required: true,
+                  },
+                  camp_code: {
+                     required: true,
+                  },
+                  std7: {
+                     required: true,
+                  }
+               },
+               messages: {
+                  firstname: {
+                     required: "This field is required."
+                  },
+                  lastname: {
+                     required: "The details are incorrect/incomplete"
+                  },
+                  company: {
+                     required: "The details are incorrect/incomplete"
+                  },
+                  job_function: {
+                     required: "The details are incorrect/incomplete"
+                  },
+                  email: {
+                     required: "Please enter an email address",
+                          < !--nofreeemail: "Please enter your business email, generic email not allowed", -- >
+                  email: "Please enter a valid email address"
+                        },
+               work_phone: {
+               required: "The details are incorrect/incomplete",
+               number: "Phone number must contain digits only"
+            },
+               city: {
+               required: "The details are incorrect/incomplete"
+            },
+               state: {
+               required: "The details are incorrect/incomplete"
+            },
+               country: {
+               required: "The details are incorrect/incomplete"
+            },
+               Industry: {
+               required: "The details are incorrect/incomplete"
+            },
+               zip: {
+               required: "The details are incorrect/incomplete",
+               number: "Zip code must contain digits only",
+               rangelength: "Zip code must have between 3 to 5 digits"
+            },
+               address_street1: {
+               required: "The details are incorrect/incomplete"
+            },
+               std1: {
+               required: "The details are incorrect/incomplete"
+            },
+               std2: {
+               required: "The details are incorrect/incomplete"
+            },
+               std3: {
+               required: "The details are incorrect/incomplete"
+            },
+               std4: {
+               required: "The details are incorrect/incomplete"
+            },
+               std5: {
+               required: "The details are incorrect/incomplete"
+            },
+               std6: {
+               required: "The details are incorrect/incomplete"
+            },
+               camp_id: {
+               required: "The details are incorrect/incomplete"
+            },
+               camp_code: {
+               required: "The details are incorrect/incomplete"
+            },
+               std7: {
+               required: "The details are incorrect/incomplete"
+            }
+                      }
+                    });
+              });
+
+
+         function CheckCountry(val) {
+            var element = document.getElementById('State');
+
+            if (val == 'Poland')
+               element.style.display = 'block';
+            else
+               element.style.display = 'none';
+         }
+      </script>
+      <!----------------------------------------------------------------->
+      <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+      <!----------------------------------------------------------------->
+      <style>
+         @media (min-width: 992px) {
+            .container {
+               width: 950px;
+            }
+         }
+
+         .abstract {
+            width: 90%;
+            font-size: 16px;
+            text-align: justify;
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 23px;
+         }
+
+         h2 {
+            font-size: 30px;
+            color: white;
+            padding-top: 10px;
+         }
+
+         h4 {
+            color: white;
+            padding-top: 10px;
+         }
+
+         .anchor-tag {
+            color: white;
+         }
+
+         .anchor-tag:hover {
+            color: white;
+         }
+
+         /* -------------------------
+         To show drop down arrow
+         ------------------------ */
+         select.form-control {
+            -webkit-appearance: menulist;
+         }
+      </style>
+   </head>
+
+   <body style="background-color: #E7E7E8;">
+      <div class="container">
+         <div class="row" style="background-color: #E7E7E8; margin-right: 0px;">
+            <div class="col-md-6" style="margin-left: 20px;margin-top: 5px;">
+               <!--SPONSER LOGO START-->
+               <img src="./logo.png" alt="" style="width: 37%;padding-top: 1px;padding-bottom: 1px;"
+                  class="img-responsive" />
+               <!--SPONSER LOGO END-->
+            </div>
+         </div>
+         <header style="background-color: #1969A0;color:#fff;padding: 2%;">
+            <center>
+               <!--TITLE START-->
+               <h2>5 Use Cases to Help Tax Professionals Take Back Their Time</h2>
+               <h4>Tired of wasting time in spreadsheets? Get the e-book and see five tax processes you can streamline
+                  with modern tech to save time and rework.
+               </h4>
+               <!--TITLE END-->
+            </center>
+         </header>
+         <div class="panel-body" style="background-color: white;padding-bottom: -9%;">
+            <div class="row">
+               <div class="col-md-6">
+                  <center>
+                     <!-- --- THUMBNAIL IMAGE START HERE---------------------->
+                     <img src="./img.png " class="img-thumbnail" width=""
+                        style=" border:solid; border-width:1px;  width: 90%;   margin: 40px 0px; padding: 1px 2px;">
+                     <!-- --- THUMBNAIL IMAGE END HERE-------------------------->
+                     <!--ABSTRACT START HERE---------------->
+                     <p class="abstract">
+                        With the increasing amount of data tax professionals use, it’s hard for spreadsheets to keep
+                        up.
+                        <br><br>
+                        Don’t let spreadsheets slow you down. Explore how analytics tech is helping tax
+                        professionals save
+                        hundreds of hours while increasing accuracy.
+                        <br><br>
+                        Get the e-book and see how to modernize these five processes and take back your
+                        time:
+                     </p>
+                     <ul class="abstract">
+                        <li>Tax apportionment</li>
+                        <li>Accrual automation</li>
+                        <li>Sales and use tax reporting</li>
+                        <li>Fixed asset depreciation</li>
+                        <li>Transfer pricing</li>
+                     </ul>
+                     <p class="abstract">Download your copy so you can deliver on time and get back to more
+                        meaningful analyses.
+                     </p>
+                     <!--ABSTRACT END HERE------------------->
+                  </center>
+               </div>
+               <form class="col-md-5" action="./sendmail.php" id="signup_form" method="post" class="validate" style="">
+                  <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+                  <input type="hidden" name="camp_type" id="camp_type" value="whitepaper" />
+                  <input type="hidden" name="camp_id" id="camp_id" value="21CEC1-Alteryx-INDIA-Finance-Tax" />
+                  <input type="hidden" name="camp_name" value="21CEC1-Alteryx-INDIA-Finance-Tax" />
+                  <input type="hidden" name="asset_title"
+                     value="5 Use Cases to Help Tax Professionals Take Back Their Time" />
+                  <input type="hidden" name="thumbnail" value="./img.png " />
+                  <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+                  <!-- ---------- FORM HEADING START HERE-------------------- -->
+                  <center>
+                     <h4 style="color: black;     padding: 26px 4px; font-weight: bolder;">
+                        Please fill out the form to download
+                     </h4>
+                  </center>
+                  <!-- ---------- FORM HEADING END HERE-------------------- -->
+                  <!-- ---------- FORM FEILD START HERE-------------------- -->
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <input id="firstname" name="fname" type="text" value="" class="form-control"
+                           placeholder="First Name" required="required" />
+                     </div>
+                     <div class="form-group col-md-6">
+                        <input id="lastname" name="data[0]" type="text" value="" class="form-control"
+                           placeholder="Last Name" required="required" />
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="col-md-12 mb-4">
+                        <input id="firstname" name="data[1]" type="email" value="" class="form-control"
+                           placeholder="Email" required="required" />
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="col-md-12 mb-4">
+                        <input id="firstname" name="data[2]" type="text" value="" class="form-control"
+                           placeholder="Company" required="required" style="    margin-bottom: 5px;" />
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="col-md-12 mb-4">
+                        <select name="data[3]" id="department" class="form-control" required="required">
+                           <option value="">Country</option>
+                           <option value="India">India</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <input id="email" name="data[4]" type="Estate" value="" class="form-control" placeholder="State"
+                           required="required" />
+                     </div>
+                     <div class="form-group col-md-6">
+                        <input id="phone" name="data[5]" type="post" value="" class="form-control"
+                           placeholder="Postal Code" required="required" />
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <input id="job_title" name="data[6]" type="text" value="" class="form-control"
+                           placeholder="Job Title" required="required" />
+                     </div>
+                       <div class="form-group col-md-6">
+                        <select name="data[7]" id="job_function" class="form-control dropdown" required="required">
+                           <option value="">Function</option>
+                           <option value="BI/Analytics">BI/Analytics</option>
+                           <option value="Finance: FP&A">Finance: FP&A</option>
+                           <option value="Finance: Other">Finance: Other</option>
+                           <option value="Finance: Tax">Finance: Tax</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <select name="data[8]" id="country" class="form-control" required="required "
+                           style="    margin-bottom: 5px;">
+                           <option value="">Company Size</option>
+                           <option value="200"> 200</option>
+                           <option value="201 - 500">201 - 500</option>
+                           <option value="501 - 1000">501 - 1000</option>
+                           <option value="1001 - 5000">1001 - 5000</option>
+                           <option value="5001 - 10,000">5001 - 10,000</option>
+                           <option value="10,000 - 20,000">10,000 - 20,000</option>
+                           <option value="20,000+">20,000+</option>
+                        </select>
+                     </div>
+                     <div class="form-group col-md-6">
+                        <select name="data[9]" id="industry" class="form-control" required="required ">
+                           <option value="">Annual Revenue</option>
+                           <option value="$500M - $750M">$500M - $750M</option>
+                           <option value="$750M - $1B">$750M - $1B</option>
+                           <option value="$1B - $2B">$1B - $2B</option>
+                           <option value="$2B+">$2B+</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="col-md-12 mb-5">
+                        <input id="firstname" name="data[10]" type="checkbox" />
+                        Sign me up to receive updates and offers from Alteryx and its partners. I can opt out at any
+                        time. By submitting this form, I agree to Alteryx's <a
+                           href="https://www.alteryx.com/privacy">Privacy Policy </a> and terms of service.
+                     </div>
+                  </div>
+                  <!----------------------------------------------------------------->
+                  <!-- DOWNLOAD BUTTON START HERE  -->
+                  <!----------------------------------------------------------------->
+                  <div class="form-row ">
+                     <center>
+                        <button type="submit" id="submit_button" name="submit"
+                           class="btn btn-primary justify-content-cente"
+                           style="background-color:#1969A0 ; color:white;width: 90%;font-weight: bold ;">
+                           Download Now
+                     </center>
+                     </button>
+                  </div>
+                  <!----------------------------------------------------------------->
+                  <!-- DOWNLOAD BUTTON END HERE -->
+                  <!----------------------------------------------------------------->
+               </form>
+               <!------------ FORM FEILD END HERE--------------------->
+            </div>
+            <!------------ FOOTER SATRT  HERE--------------------->
+            <div class="container mt-5">     
+            <footer style="background-color:#1969A0; color: white; padding:40px;">
+               <center>
+
+
+                  <div class="span12 center">
+                     <p style=" font-size: 13px;color: white; display: flex;
+                     flex-direction: center;
+                     justify-content: center;">Copyright &copy; Pangea Global
+                        Services, Inc. | <a href="https://www.pangeaglobalservices.com/unsubscribe/" target="_blank"
+                           class="anchor-tag"> &nbsp; Click here to unsubscribe &nbsp; </a> |&nbsp; <a
+                           href="https://pangeaglobalservices.com/privacy-policy/" class="anchor-tag" target="_blank">
+                           &nbsp; Privacy Policy</a>
+                     </p>
+                  </div>
+               </center>
+            </footer>
+         </div>
+
+            <!------------ FOOTER END  HERE--------------------->
+         </div>
+      </div>
+
+
+      <!-- -------------------------------------------------------------
+         THIS IS BOOTSTRAP SCRIPT
+         -------------------------------------------------------------- -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+   </body>
+
+</html>
